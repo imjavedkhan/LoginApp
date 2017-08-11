@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.predator.loginapp.Login">
+
+    <EditText
+        android:id="@+id/user"
+        android:hint="@string/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="48dp"
+        android:layout_above="@+id/pass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:hint="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="124dp"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/btn"
+        android:layout_alignLeft="@+id/user"
+        android:layout_alignStart="@+id/user" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="250dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/pass"
+        android:layout_alignEnd="@+id/pass"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_alignStart="@+id/pass" />
+
+</RelativeLayout>
